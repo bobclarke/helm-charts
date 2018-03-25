@@ -4,6 +4,7 @@ metadata:
   name: nginx-deployment
   labels:
     app: nginx
+    my_label: {{ .Values.foo }}
 spec:
   replicas: 1
   selector:
